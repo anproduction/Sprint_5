@@ -19,10 +19,9 @@ def test_successful_registration(driver):
 
 def test_registration_with_invalid_password(driver):
     driver.get(BASE_URL + "/register")
-    unique_email = generate_unique_email()
 
     wait_for_element(driver, *loc.input_name).send_keys(INVALID_USER["name"])
-    wait_for_element(driver, *loc.input_email).send_keys(unique_email)
+    wait_for_element(driver, *loc.input_email).send_keys(INVALID_USER["email"])
     wait_for_element(driver, *loc.input_password).send_keys(INVALID_USER["password"])
     wait_for_element(driver, *loc.button_submit).click()
     error = wait_for_element(driver, *loc.notification_incorrect_password)

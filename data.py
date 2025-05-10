@@ -26,6 +26,7 @@ TEST_USER = {
 }
 
 INVALID_USER = {
+    "name": FIRST_NAME,
     "email": "invalid_email@yandex.ru",
     "password": "short"
 }
