@@ -19,12 +19,21 @@ def generate_unique_email():
 def generate_random_password():
     return generate_random_string(length=8)
 
+# Уникальный пользователь для регистрации в рантайме
 TEST_USER = {
     "name": FIRST_NAME,
     "email": generate_unique_email(),
     "password": generate_random_password()
 }
 
+# Зарегистрированный заранее пользователь
+EXISTING_USER = {
+    "name": FIRST_NAME,
+    "email": "anastasiaprodan22@yandex.ru",
+    "password": "ya10052025"
+}
+
+# Невалидный пользователь
 INVALID_USER = {
     "name": FIRST_NAME,
     "email": "invalid_email@yandex.ru",
