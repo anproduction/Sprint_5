@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="470510b5-9728-45ba-9abf-f899a1ff83a0" name="Changes" comment="add_fixtures_to_conftest">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="470510b5-9728-45ba-9abf-f899a1ff83a0" name="Changes" comment="add_test_classes_to_tests">
+      <change beforePath="$PROJECT_DIR$/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_constructor_section.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_constructor_section.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_logout.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_logout.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_navigation_to_constructor.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_navigation_to_constructor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_navigation_to_personal_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_navigation_to_personal_account.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_registration.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_registration.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746988415420</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add_test_classes_to_tests">
+      <option name="closed" value="true" />
+      <created>1746989713003</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1746989713004</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -267,6 +270,7 @@
     <MESSAGE value="fix_tests" />
     <MESSAGE value="add_assert_in_tests" />
     <MESSAGE value="add_fixtures_to_conftest" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_fixtures_to_conftest" />
+    <MESSAGE value="add_test_classes_to_tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_test_classes_to_tests" />
   </component>
 </project>

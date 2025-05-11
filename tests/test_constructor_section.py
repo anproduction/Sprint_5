@@ -1,4 +1,4 @@
-from data import BASE_URL
+from data import BASE_URL, BLOCKS
 from helpers import wait_for_element
 import locators as loc
 
@@ -9,18 +9,18 @@ class TestConstructorSections:
         wait_for_element(driver, *loc.sauces_block).click()
         wait_for_element(driver, *loc.buns_block).click()
         selected = wait_for_element(driver, *loc.selected_button)
-        assert "Булки" in selected.text
+        assert BLOCKS["buns"] in selected.text
 
 
     def test_sauces_section(self, driver):
         driver.get(BASE_URL)
         wait_for_element(driver, *loc.sauces_block).click()
         selected = wait_for_element(driver, *loc.selected_button)
-        assert "Соусы" in selected.text
+        assert BLOCKS["sauces"] in selected.text
 
 
     def test_fillings_section(self, driver):
         driver.get(BASE_URL)
         wait_for_element(driver, *loc.fillings_block).click()
         selected = wait_for_element(driver, *loc.selected_button)
-        assert "Начинки" in selected.text
+        assert BLOCKS["fillings"] in selected.text

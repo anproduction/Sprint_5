@@ -39,3 +39,10 @@ INVALID_USER = {
     "email": "invalid_email@yandex.ru",
     "password": "short"
 }
+
+# Тестовые данные для блоков
+BLOCKS = {
+    "buns" : "Булки",
+    "sauces" : "Соусы",
+    "fillings" : "Начинки"
+}
