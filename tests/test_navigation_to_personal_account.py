@@ -14,5 +14,5 @@ def test_navigation_to_personal_account(driver):
 
     login(driver, EXISTING_USER["email"], EXISTING_USER["password"])
     wait_for_element(driver, *loc.button_personal_account).click()
-    wait_for_element(driver, *loc.profile)
-    driver.quit()
+    profile_link = wait_for_element(driver, *loc.profile)
+    assert profile_link.is_displayed()
