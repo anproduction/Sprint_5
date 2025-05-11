@@ -1,6 +1,7 @@
-from data import BASE_URL, BLOCKS
+from data import BLOCKS
 from helpers import wait_for_element
 import locators as loc
+from urls import BASE_URL
 
 class TestConstructorSections:
 

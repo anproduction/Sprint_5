@@ -1,6 +1,7 @@
-from data import BASE_URL, generate_unique_email, generate_random_password
+from data import generate_unique_email, generate_random_password
 from helpers import wait_for_element
 import locators as loc
+from urls import BASE_URL, REGISTER_URL, FORGOT_PASSWORD_URL
 
 
 class TestLoginFromDifferentPlaces:
@@ -34,7 +35,7 @@ class TestLoginFromDifferentPlaces:
         password = generate_random_password()
         register_new_user(email, password)
 
-        driver.get(BASE_URL + "/register")
+        driver.get(REGISTER_URL)
         wait_for_element(driver, *loc.button_login_in_registration_form).click()
         login_user(email, password)
         wait_for_element(driver, *loc.button_personal_account).click()
@@ -46,7 +47,7 @@ class TestLoginFromDifferentPlaces:
         password = generate_random_password()
         register_new_user(email, password)
 
-        driver.get(BASE_URL + "/forgot-password")
+        driver.get(FORGOT_PASSWORD_URL)
         wait_for_element(driver, *loc.button_login_passwd_recovery_form).click()
         login_user(email, password)
         wait_for_element(driver, *loc.button_personal_account).click()

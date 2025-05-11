@@ -1,8 +1,6 @@
 import random
 import string
 
-BASE_URL = "https://stellarburgers.nomoreparties.site"
-
 FIRST_NAME = "Anastasia"
 LAST_NAME = "Prodan"
 COHORT_NUMBER = "22"

@@ -1,13 +1,13 @@
-from data import TEST_USER, INVALID_USER, BASE_URL
+from data import TEST_USER, INVALID_USER, generate_unique_email, generate_random_password
 from helpers import wait_for_element
 import locators as loc
-from data import generate_unique_email, generate_random_password
+from urls import REGISTER_URL
 
 
 class TestRegistration:
 
     def test_successful_registration(self, driver):
-        driver.get(BASE_URL + "/register")
+        driver.get(REGISTER_URL)
         unique_email = generate_unique_email()
         random_password = generate_random_password()
 
@@ -20,7 +20,7 @@ class TestRegistration:
 
 
     def test_registration_with_invalid_password(self, driver):
-        driver.get(BASE_URL + "/register")
+        driver.get(REGISTER_URL)
 
         wait_for_element(driver, *loc.input_name).send_keys(INVALID_USER["name"])
         wait_for_element(driver, *loc.input_email).send_keys(INVALID_USER["email"])
